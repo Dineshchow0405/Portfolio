@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="https://drive.google.com/file/d/18ElCHKDZBevzj-c1ojAw8F881O-pdgZ4/view?usp=sharing" className="block text-gray-300 hover:text-purple-400 transition-colors">
                 Resume
               </a>
-              <a href="#" className="block text-gray-300 hover:text-purple-400 transition-colors">
+              <a href="https://github.com/Dineshchow0405/Portfolio" className="block text-gray-300 hover:text-purple-400 transition-colors">
                 Portfolio
               </a>
             </div>

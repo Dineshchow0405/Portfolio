@@ -40,7 +40,7 @@ const Homepage = () => {
             <div className="mb-8">
               <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-400/50 shadow-2xl bg-white/5 backdrop-blur-sm">
                 <img 
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                  src="/profil_img copy.jpg" 
                   alt="Reddy Dinesh Venkata Krishna"
                   className="w-full h-full object-cover object-center"
                 />

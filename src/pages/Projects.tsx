@@ -20,8 +20,8 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
       category: 'Web Development',
       date: 'Jun 2025',
-      github: 'https://github.com',
-      live: 'https://github.com',
+      github: 'https://github.com/Dineshchow0405/Portfolio',
+      live: 'https://github.com/Dineshchow0405/Portfolio',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
@@ -30,13 +30,13 @@ const Projects = () => {
       technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'RoboFlow'],
       category: 'Machine Learning',
       date: 'May 2024',
-      github: 'https://github.com',
-      live: 'https://github.com',
+      github: 'https://github.com/Dineshchow0405',
+      live: 'https://github.com/Dineshchow0405',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       title: 'Telegram Bot For Weather Prediction',
-      description: 'An AI driven bot for predicitong weather report across cities.',
+      description: 'An AI driven bot for predicting weather report across cities.',
       technologies: ['Python', 'Json', 'TeleBot', 'NLP'],
       category: 'AI/ML',
       date: 'Jun 2024',

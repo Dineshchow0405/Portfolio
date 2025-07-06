@@ -1,69 +1,70 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import Card from '../components/Card';
 
 const Internships = () => {
   const internships = [
-     {
-            title: 'Flutter Developer Intern',
-            company: 'Pramukesh And Co',
-            location: 'Velpuru, Andhra Pradesh',
-            duration: 'May 2025 - Jul 2023',
-            type: 'Full-time',
-            description: 'As a Flutter Developer Intern at Pramukesh and Co, I was responsible for building cross-platform mobile applications using Flutter and Dart. During the internship, I gained hands-on experience in UI/UX design, Firebase integration, and backend communication. I concluded the internship by developing a production-level Attendance Management App, inspired by apps like PagarBook, designed to simplify employee attendance tracking and management for small businesses.',
-            responsibilities: [
-                'Developed responsive and reusable UI components using Flutter and Dart.',
-                'Built features such as user registration, daily check-in/check-out, and monthly attendance reports.',
-                'Conducted app testing and debugging across Android devices to ensure performance and reliability.',
-                'Collaborated with mentors and team members via Git and version control systems.'
-            ],
-            technologies: ['Flutter', 'Dart', 'MaterialApp', 'Figma', 'VS Code'],
-            achievements: [
-                'Developed a full-featured attendance management app using Flutter and Firebase from scratch.',
-                'Implemented real-time data syncing and offline support to enhance user experience.',
-                'Reduced manual attendance tracking efforts by automating check-in/out and report generation.'
-            ],
-            companyLogo: 'https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=100'
-        },
-        {
-            title: 'AI Intern',
-            company: 'AIMERS Socity',
-            location: 'Remote',
-            duration: 'May 2024 - Jul 2024',
-            type: 'Part-time',
-            description: 'Worked on various AI tools for predictive analytics(Power BI) and data visualization(Object Detection). Analyzed large datasets for predictive weather forecasting.',
-            responsibilities: [
-                'Developed machine learning models for Object Detection',
-                'Created data visualizations using Python and Tableau',
-                'Performed statistical analysis on large datasets',
-                'Made analytics on weather forecasting using bot'
-            ],
-            technologies: ['Python', 'Pandas', 'Json', 'NLP', 'Yolo'],
-            achievements: [
-                'Improved model accuracy by 25% through feature engineering',
-                'Created automated weather reporting system saving 20 hours'],
-            companyLogo: 'https://media.licdn.com/dms/image/v2/C560BAQHuJJtpXYm6Nw/company-logo_200_200/company-logo_200_200/0/1634191812277?e=2147483647&v=beta&t=4CpLbMCf8eJuAy9R_D0oSxk9Emv7yRwwK2rsu3TQyDA'
-        },
-        {
-            title: 'AIML Intern',
-            company: 'LearnWik Solutions Pvt Ltd',
-            location: 'Bengaluru, India',
-            duration: 'Apr 2023 - Jun 2023',
-            type: 'Part-time',
-            description: 'Developed and implementation of AI-Based Facial Recognition system.',
-            responsibilities: [
-                'Identified use cases and technical requirements for the facial recognition system.',
-                'Designed architecture integrating camera hardware, preprocessing modules, and recognition pipelines.',
-                'Trained and fine-tuned models using frameworks like TensorFlow, PyTorch, or OpenCV.'
-            ],
-            technologies: ['Deep Learning', 'Python', 'CNN', 'RoboFlow', 'Git'],
-            achievements: [
-                'Achieved 98.7% face recognition accuracy across diverse demographics using a custom-trained deep learning model optimized with transfer learning and data augmentation techniques.',
-                'Reduced face detection and verification time by 40% by implementing real-time inference with model quantization and GPU acceleration, enabling smooth performance on edge devices.',
-                'Successfully deployed the system for secure access control in a live environment, managing over 5,000 user profiles.'
-            ],
-            companyLogo: 'https://content3.jdmagicbox.com/v2/comp/bangalore/y7/080pxx80.xx80.230331182417.w7y7/catalogue/learnwik-solutions-pvt-ltd-bommanahalli-bangalore-education-consultants-up5ikgbbq1.jpg'
-        }
+    {
+      title: 'Flutter Developer Intern',
+      company: 'Pramukesh And Co',
+      location: 'Velpuru, Andhra Pradesh',
+      duration: 'May 2025 - Jul 2025',
+      type: 'Full-time',
+      description: 'As a Flutter Developer Intern at Pramukesh and Co, I was responsible for building cross-platform mobile applications using Flutter and Dart. During the internship, I gained hands-on experience in UI/UX design, Firebase integration, and backend communication. I concluded the internship by developing a production-level Attendance Management App, inspired by apps like PagarBook, designed to simplify employee attendance tracking and management for small businesses.',
+      responsibilities: [
+        'Developed responsive and reusable UI components using Flutter and Dart.',
+        'Built features such as user registration, daily check-in/check-out, and monthly attendance reports.',
+        'Conducted app testing and debugging across Android devices to ensure performance and reliability.',
+        'Collaborated with mentors and team members via Git and version control systems.'
+      ],
+      technologies: ['Flutter', 'Dart', 'MaterialApp', 'Figma', 'VS Code'],
+      achievements: [
+        'Developed a full-featured attendance management app using Flutter and Firebase from scratch.',
+        'Implemented real-time data syncing and offline support to enhance user experience.',
+        'Reduced manual attendance tracking efforts by automating check-in/out and report generation.'
+      ],
+      companyLogo: 'https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=100'
+    },
+    {
+      title: 'AI Intern',
+      company: 'AIMERS Society',
+      location: 'Remote',
+      duration: 'May 2024 - Jul 2024',
+      type: 'Part-time',
+      description: 'Worked on various AI tools for predictive analytics(Power BI) and data visualization(Object Detection). Analyzed large datasets for predictive weather forecasting.',
+      responsibilities: [
+        'Developed machine learning models for Object Detection',
+        'Created data visualizations using Python and Tableau',
+        'Performed statistical analysis on large datasets',
+        'Made analytics on weather forecasting using bot'
+      ],
+      technologies: ['Python', 'Pandas', 'Json', 'NLP', 'Yolo'],
+      achievements: [
+        'Improved model accuracy by 25% through feature engineering',
+        'Created automated weather reporting system saving 20 hours'
+      ],
+      companyLogo: 'https://media.licdn.com/dms/image/v2/C560BAQHuJJtpXYm6Nw/company-logo_200_200/company-logo_200_200/0/1634191812277?e=2147483647&v=beta&t=4CpLbMCf8eJuAy9R_D0oSxk9Emv7yRwwK2rsu3TQyDA'
+    },
+    {
+      title: 'AIML Intern',
+      company: 'LearnWik Solutions Pvt Ltd',
+      location: 'Bengaluru, India',
+      duration: 'Apr 2023 - Jun 2023',
+      type: 'Part-time',
+      description: 'Developed and implementation of AI-Based Facial Recognition system.',
+      responsibilities: [
+        'Identified use cases and technical requirements for the facial recognition system.',
+        'Designed architecture integrating camera hardware, preprocessing modules, and recognition pipelines.',
+        'Trained and fine-tuned models using frameworks like TensorFlow, PyTorch, or OpenCV.'
+      ],
+      technologies: ['Deep Learning', 'Python', 'CNN', 'RoboFlow', 'Git'],
+      achievements: [
+        'Achieved 98.7% face recognition accuracy across diverse demographics using a custom-trained deep learning model optimized with transfer learning and data augmentation techniques.',
+        'Reduced face detection and verification time by 40% by implementing real-time inference with model quantization and GPU acceleration, enabling smooth performance on edge devices.',
+        'Successfully deployed the system for secure access control in a live environment, managing over 5,000 user profiles.'
+      ],
+      companyLogo: 'https://content3.jdmagicbox.com/v2/comp/bangalore/y7/080pxx80.xx80.230331182417.w7y7/catalogue/learnwik-solutions-pvt-ltd-bommanahalli-bangalore-education-consultants-up5ikgbbq1.jpg'
+    }
   ];
 
   return (

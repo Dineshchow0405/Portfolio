@@ -1,47 +1,52 @@
 import React from 'react';
-import { Github, ExternalLink, Calendar, Code, Database, Smartphone } from 'lucide-react';
+import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Card from '../components/Card';
 
 const Projects = () => {
   const projects = [
-   {
-            title: 'Attendance App',
-            description: 'An app which stores the attendance log and the status of employees working days in a month also for requesting leaves in the same place.',
-            technologies: ['Dart', 'Flutter', 'Json', 'Figma'],
-            category: 'Android Development',
-            date: 'Jun 2025',
-            github: 'https://github.com/Dineshchow0405/AttendanceApp',
-            image: 'https://i.pinimg.com/736x/15/a5/81/15a5815382871c82e1273fc649fcf986.jpg'
-        },
-        {
-            title: 'My Portfolio',
-            description: 'Full-stack based portfolio application with HTML, CSS, JavaScript, React, Node.js, and MongoDB. Features include homepage, aboutMe, education, certificates, internships and projects.',
-            technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
-            category: 'Web Development',
-            date: 'Jun 2025',
-            github: 'https://github.com',
-            image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800'
-        },
-        {
-            title: 'Object Detection Using Machine Learning',
-            description: 'Built a machine learning model to classify images using deep learning techniques. Achieved 95% accuracy on test dataset using CNN architecture.',
-            technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'RoboFlow'],
-            category: 'Machine Learning',
-            date: 'May 2024',
-             github: 'https://github.com',
-            image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800'
-        },
-        {
-            title: 'Telegram Bot For Weather Prediction',
-            description: 'An AI driven bot for predicitong weather report across cities.',
-            technologies: ['Python', 'Json', 'TeleBot', 'NLP'],
-            category: 'Blockchain',
-            date: 'Jun 2024',                github:'https://colab.research.google.com/drive/1YkZj4I5qE6HRvWsA8kUghGuZmzpm72wK',
-            image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800'
-        }
+    {
+      title: 'Attendance App',
+      description: 'An app which stores the attendance log and the status of employees working days in a month also for requesting leaves in the same place.',
+      technologies: ['Dart', 'Flutter', 'Json', 'Figma'],
+      category: 'Android Development',
+      date: 'Jun 2025',
+      github: 'https://github.com/Dineshchow0405/AttendanceApp',
+      live: 'https://github.com/Dineshchow0405/AttendanceApp',
+      image: 'https://i.pinimg.com/736x/15/a5/81/15a5815382871c82e1273fc649fcf986.jpg'
+    },
+    {
+      title: 'My Portfolio',
+      description: 'Full-stack based portfolio application with HTML, CSS, JavaScript, React, Node.js, and MongoDB. Features include homepage, aboutMe, education, certificates, internships and projects.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
+      category: 'Web Development',
+      date: 'Jun 2025',
+      github: 'https://github.com',
+      live: 'https://github.com',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      title: 'Object Detection Using Machine Learning',
+      description: 'Built a machine learning model to classify images using deep learning techniques. Achieved 95% accuracy on test dataset using CNN architecture.',
+      technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'RoboFlow'],
+      category: 'Machine Learning',
+      date: 'May 2024',
+      github: 'https://github.com',
+      live: 'https://github.com',
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      title: 'Telegram Bot For Weather Prediction',
+      description: 'An AI driven bot for predicitong weather report across cities.',
+      technologies: ['Python', 'Json', 'TeleBot', 'NLP'],
+      category: 'AI/ML',
+      date: 'Jun 2024',
+      github: 'https://colab.research.google.com/drive/1YkZj4I5qE6HRvWsA8kUghGuZmzpm72wK',
+      live: 'https://colab.research.google.com/drive/1YkZj4I5qE6HRvWsA8kUghGuZmzpm72wK',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800'
+    }
   ];
 
-  const categories = ['All', 'Web Development', 'App Development', 'Machine Learning'];
+  const categories = ['All', 'Web Development', 'Android Development', 'Machine Learning', 'AI/ML'];
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
   const filteredProjects = selectedCategory === 'All' 
@@ -90,14 +95,9 @@ const Projects = () => {
               </div>
               
               <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center space-x-2">
-                  <div className="text-purple-400">
-                    {project.icon}
-                  </div>
-                  <span className="text-sm text-purple-400 font-medium">
-                    {project.category}
-                  </span>
-                </div>
+                <span className="text-sm text-purple-400 font-medium">
+                  {project.category}
+                </span>
                 
                 <div className="flex items-center space-x-1 text-sm text-gray-400">
                   <Calendar className="h-4 w-4" />
@@ -127,6 +127,8 @@ const Projects = () => {
               <div className="flex space-x-3">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-1 text-gray-300 hover:text-purple-400 transition-colors"
                 >
                   <Github className="h-4 w-4" />
@@ -134,6 +136,8 @@ const Projects = () => {
                 </a>
                 <a
                   href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-1 text-gray-300 hover:text-purple-400 transition-colors"
                 >
                   <ExternalLink className="h-4 w-4" />

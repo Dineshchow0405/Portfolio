@@ -4,7 +4,8 @@ import Card from '../components/Card';
 
 const About = () => {
   const skills = [
-           'c', 'Python', 'Java', 'JavaScript', 'React.Js', 'Dart', 'Flutter', 'HTML', 'CSS', 'MongoDB', 'Git', 'Machine Learning'
+    'C', 'Python', 'Java', 'JavaScript', 'React.js', 'Dart', 'Flutter', 
+    'HTML', 'CSS', 'MongoDB', 'Git', 'Machine Learning'
   ];
 
   return (
@@ -25,7 +26,7 @@ const About = () => {
             <Card className="text-center">
               <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-400/50 shadow-2xl bg-white/5 backdrop-blur-sm">
                 <img 
-                  src="https://drive.google.com/file/d/17ip7zOVooouQs2tNcqeu6MKGubWrUX0f/view?usp=sharing" 
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400" 
                   alt="Dinesh Venkata Krishna Reddy"
                   className="w-full h-full object-cover object-center"
                 />
